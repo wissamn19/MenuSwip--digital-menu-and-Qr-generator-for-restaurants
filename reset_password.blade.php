@@ -1,31 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Reset Password</title>
-    <p>Token: {{ $token ?? 'Not passed' }}</p>
-    <p>Email: {{ $email ?? 'Not passed' }}</p>
-
+  <meta charset="UTF-8">
+  <title>Reset your password</title>
 </head>
 <body>
-    <h2>Reset Your Password</h2>
-
-
-    <form method="POST" action="{{ route('reset.password') }}">
-        @csrf
-        <input type="hidden" name="token" value="{{ $token }}">
-        <input type="hidden" name="email" value="{{ $email }}">
-
-        <div>
-            <label>New Password:</label>
-            <input type="password" name="password" required>
-        </div>
-
-        <div>
-            <label>Confirm Password:</label>
-            <input type="password" name="password_confirmation" required>
-        </div>
-
-        <button type="submit">Reset Password</button>
-    </form>
+  <p>Hello,</p>
+  <p>You asked to change your password. Click on this link:</p>
+  <p><a href="{{ $link }}">{{ $link }}</a></p>
+  <p>This link is available for 24 hours.</p>
+  <p>Thank you,<br>MenuSwip team.</p>
 </body>
 </html>
