@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Base styles - these complement Tailwind's reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles that extend Tailwind */
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 text-sm flex items-center gap-2;
+  }
+
+  .btn-login {
+    @apply border-2 border-[#ff8903] text-[#ff8903] hover:bg-[#ff8903] hover:text-white;
+  }
+
+  .btn-register {
+    @apply bg-[#ff8903] text-white hover:bg-[#e67a00];
+  }
+
+  .nav-link {
+    @apply text-gray-800 font-medium hover:text-[#ff8903] transition-colors;
+  }
+
+  .menu-item {
+    @apply flex flex-col md:flex-row items-center gap-4 p-4 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow mb-6;
+  }
+
+  .menu-item-content {
+    @apply text-center md:text-left w-full;
+  }
+
+  .menu-category {
+    @apply text-2xl font-medium text-gray-800 mb-6 mt-8;
+  }
+  
+
+  .footer-heading {
+    @apply text-black text-base font-medium mb-6;
+  }
+
+  .footer-link {
+    @apply text-gray-600 hover:text-[#ff8903] transition-colors;
+  }
+
+  .social-icon {
+    @apply bg-[#FF8903] text-black w-10 h-10 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity;
+  }
+}
+
+
+
