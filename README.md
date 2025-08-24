@@ -25,6 +25,10 @@
 <h5>npm run dev</h5>
 <h5>npm install -D @tailwindcss/postcss</h5>
 
+<h2>  NOTE⛔: </h2>
+
+<h4> MAKE SURE TO CHANGE SOME SETTINGS FOR (package json and for laravel files). </h4>
+
 
 
 
